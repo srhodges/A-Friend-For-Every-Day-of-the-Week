@@ -8,7 +8,7 @@ A Friend for Every Day of the Week
 
 ## Project Description
 
-This application will first display the days of the week then display an affirmation or word of encouragement from the Bible.
+This application will first display the days of the week then display an affirmation or word of encouragement from the Bible when clicked.
 
 ## API and Data Sample
 
@@ -32,7 +32,7 @@ bible-api.com/
 
 ## Wireframes
 
-Upload images of your wireframes to an image hosting site or add them to an assets folder in your repo and link them here with a description of each specific wireframe.
+https://wireframe.cc/pro/pp/543d4ba6e467781
 
 ### MVP/PostMVP
 
@@ -74,17 +74,19 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 Include a full list of features that have been prioritized based on the `Time and Importance` Matrix. Link this image in a similar manner to your wireframes
 
+- Seperate div panels that display days of the week
+
 ## Timeframes
 
 Tell us how long you anticipate spending on each area of development. Be sure to consider how many hours a day you plan to be coding and how many days you have available until presentation day.
 
 | Component           | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Formatting HTML     |    H     |     4 hrs      |     0 hrs     |    0 hrs    |
-| Styling with CSS    |    H     |     5 hrs      |     0 hrs     |    0 hrs    |
-| Working with API    |    H     |     5 hrs      |     0 hrs     |    0 hrs    |
+| Formatting HTML     |    H     |     6 hrs      |     0 hrs     |    0 hrs    |
+| Styling with CSS    |    H     |     6 hrs      |     0 hrs     |    0 hrs    |
+| Working with API    |    H     |     6 hrs      |     0 hrs     |    0 hrs    |
 | Functionality in JS |    H     |     6 hrs      |     0 hrs     |    0 hrs    |
-| Total               |    H     |     20 hrs     |     0 hrs     |    0 hrs    |
+| Total               |    H     |     24 hrs     |     0 hrs     |    0 hrs    |
 
 ## Code Snippet
 
