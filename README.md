@@ -89,7 +89,8 @@ Time frames are also key in the development cycle.  You have limited time to cod
 
 ## Code Snippet
 
-```<strong> This code snippet will display the alt text for the weekday image/object after it's been clicked.</strong>
+```
+<strong> This code snippet will display the alt text for the weekday image/object after it's been clicked.</strong>
 
 onclick = displayHope();
 
