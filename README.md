@@ -14,6 +14,7 @@ This application will first display the days of the week then display an affirma
 
 bible-api.com/
 
+```
 "reference": "John 3:16",
 "verses": [
 {
@@ -30,6 +31,8 @@ bible-api.com/
 "translation_note": "Public Domain"
 }
 
+```
+
 ## Wireframes
 
 https://wireframe.cc/pro/pp/543d4ba6e467781
@@ -45,10 +48,9 @@ _These are examples only. Replace with your own MVP features._
 - Successfully use external api
 - Render data on page
 - Allow user to choose day
+-
 
 #### PostMVP
-
-_These are examples only. Replace with your own Post-MVP features._
 
 - Make weekday tiles float on page
 - Use local storage to save user notes for individual weekdays
@@ -80,6 +82,8 @@ Include a full list of features that have been prioritized based on the `Time an
 
 Tell us how long you anticipate spending on each area of development. Be sure to consider how many hours a day you plan to be coding and how many days you have available until presentation day.
 
+Time frames are also key in the development cycle. You have limited time to code all phases of the game. Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe. Throughout your project, keep track of your Time Invested and Actual Time and update your README regularly.
+
 | Component           | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
 | Formatting HTML     |    H     |     6 hrs      |     0 hrs     |    0 hrs    |
@@ -90,6 +94,7 @@ Tell us how long you anticipate spending on each area of development. Be sure to
 
 ## Code Snippet
 
+```
 <strong> This code snippet will display the alt text for the weekday image/object after it's been clicked.</strong>
 
 onclick = displayHope();
@@ -106,7 +111,7 @@ weekday.parentNode.replaceChild(text, weekday);
 }
 }
 
-<!-- let alt = get axios random verse -->
+```
 
 ## Change Log
 
