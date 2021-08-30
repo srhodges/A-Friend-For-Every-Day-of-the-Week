@@ -28,7 +28,9 @@ bible-api.com/
 "translation_id": "web",
 "translation_name": "World English Bible",
 "translation_note": "Public Domain"
-}```
+}
+
+```
 
 ## Wireframes
 
