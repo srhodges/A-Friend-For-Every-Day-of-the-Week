@@ -4,19 +4,35 @@
 
 ## Project Name
 
-The name of your project.
+A Friend for Every Day of the Week
 
 ## Project Description
 
-Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and\or functionality.
+This application will first display the days of the week then display an affirmation or word of encouragement from the Bible when clicked.
 
 ## API and Data Sample
 
-Specify the API you are using and include a link. Show us a snippet of JSON returned by your API so we know you can access it and get the info you need
+bible-api.com/
+
+"reference": "John 3:16",
+"verses": [
+{
+"book_id": "JHN",
+"book_name": "John",
+"chapter": 3,
+"verse": 16,
+"text": "\nFor God so loved the world, that he gave his one and only Son, that whoever believes in him should not perish, but have eternal life.\n\n"
+}
+],
+"text": "\nFor God so loved the world, that he gave his one and only Son, that whoever believes in him should not perish, but have eternal life.\n\n",
+"translation_id": "web",
+"translation_name": "World English Bible",
+"translation_note": "Public Domain"
+}
 
 ## Wireframes
 
-Upload images of your wireframes to an image hosting site or add them to an assets folder in your repo and link them here with a description of each specific wireframe.
+https://wireframe.cc/pro/pp/543d4ba6e467781
 
 ### MVP/PostMVP
 
@@ -25,15 +41,15 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 #### MVP 
 *These are examples only. Replace with your own MVP features.*
 
-- Find and use external api 
-- Render data on page 
-- Allow user to choose favorites 
-
+- Successfully use external api
+- Render data on page
+- Allow user to choose day
+- 
 #### PostMVP  
-*These are examples only. Replace with your own Post-MVP features.*
 
-- Add second API
-- Use local storage to save user favorites
+- Make weekday tiles float on page
+- Use local storage to save user notes for individual weekdays
+- Give translation options
 
 ## Project Schedule
 
@@ -41,15 +57,15 @@ This schedule will be used to keep track of your progress throughout the week an
 
 You are **responsible** for scheduling time with your squad to seek approval for each deliverable by the end of the corresponding day, excluding `Saturday` and `Sunday`.
 
-|  Day | Deliverable | Status
-|---|---| ---|
-|July 10-12| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
-|July 13| Project Approval | Incomplete
-|July 13| Core Application Structure (HTML, CSS, etc.) | Incomplete
-|July 14| Pseudocode / actual code | Incomplete
-|July 15| Initial Clickable Model  | Incomplete
-|July 16| MVP | Incomplete
-|July 17| Presentations | Incomplete
+| Day           | Deliverable                                        | Status     |
+| ------------- | -------------------------------------------------- | ---------- |
+| August 27 -29 | Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete |
+| August 30     | Project Approval                                   | Incomplete |
+| August 31     | Core Application Structure (HTML, CSS, etc.)       | Incomplete |
+| Sept 1        | Pseudocode / actual code                           | Incomplete |
+| Sept 2        | Initial Clickable Model                            | Incomplete |
+| Sept 3        | MVP                                                | Incomplete |
+| Sept 6        | Presentations                                      | Incomplete |
 
 ## Priority Matrix
 
@@ -61,21 +77,31 @@ Tell us how long you anticipate spending on each area of development. Be sure to
 
 Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe. Throughout your project, keep track of your Time Invested and Actual Time and update your README regularly.
 
-| Component | Priority | Estimated Time | Time Invested | Actual Time |
-| --- | :---: |  :---: | :---: | :---: |
-| Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
-| Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
-| Total | H | 6hrs| 5hrs | 5hrs |
+| Component           | Priority | Estimated Time | Time Invested | Actual Time |
+| ------------------- | :------: | :------------: | :-----------: | :---------: |
+| Formatting HTML     |    H     |     6 hrs      |     0 hrs     |    0 hrs    |
+| Styling with CSS    |    H     |     6 hrs      |     0 hrs     |    0 hrs    |
+| Working with API    |    H     |     6 hrs      |     0 hrs     |    0 hrs    |
+| Functionality in JS |    H     |     6 hrs      |     0 hrs     |    0 hrs    |
+| Total               |    H     |     24 hrs     |     0 hrs     |    0 hrs    |
 
 ## Code Snippet
 
-Use this section to include a brief code snippet of functionality that you are proud of and a brief description.  
+<strong> This code snippet will display the alt text for the weekday image/object after it's been clicked.</strong>
 
-```
-function reverse(string) {
-	// here is the code to reverse a string of text
+onclick = displayHope();
+
+function displayHope() {
+
+let weekdays = document.body.getElementById('weekdays');
+let weekday = weekdays[i];
+
+if (weekday.alt) {
+let text = document.createTextNode(weekday.alt);
+weekday.parentNode.replaceChild(text, weekday);
 }
-```
+}
+}
 
 ## Change Log
  Use this section to document what changes were made and the reasoning behind those changes.  
