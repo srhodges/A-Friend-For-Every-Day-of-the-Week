@@ -14,7 +14,7 @@ This application will first display the days of the week then display an affirma
 
 bible-api.com/
 
-"reference": "John 3:16",
+```"reference": "John 3:16",
 "verses": [
 {
 "book_id": "JHN",
@@ -28,7 +28,7 @@ bible-api.com/
 "translation_id": "web",
 "translation_name": "World English Bible",
 "translation_note": "Public Domain"
-}
+}```
 
 ## Wireframes
 
