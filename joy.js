@@ -1,3 +1,13 @@
+const bibleUrl = "https://bible-api";
+const weekdayBox = document.querySelector(".weekday-container.weekday");
+
+weekdayBox.createTextNode(message());
+
+function message() {
+  // 
+}
+
+
 onclick = displayHope();
 
 function displayHope() {
