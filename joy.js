@@ -58,22 +58,22 @@ days.forEach(day => {
         accessBible("1Corinthians 13", "sunday");
         break;
       case "monday":
-        accessBible("Hebrews 11:6", "monday");
+        accessBible("1John 5:14-15", "monday");
         break;
         case "tuesday":
-          accessBible("Hebrews 11:6", "tuesday");
+          accessBible("Ephesians 4:31-32", "tuesday");
         break;
         case "wednesday":
-          accessBible("Hebrews 11:6", "wednesday");
+          accessBible("Psalm 34:17", "wednesday");
         break;
         case "thursday":
-          accessBible("Hebrews 11:6", "thursday");
+          accessBible("James 1:2-4", "thursday");
         break;
         case "friday":
-          accessBible("Hebrews 11:6", "friday");
+          accessBible("Romans 15:13", "friday");
           break;
           case "saturday":
-        accessBible("Hebrews 11:6", "saturday");
+        accessBible("2Corinthians 13:11", "saturday");
         break;
     
     }
