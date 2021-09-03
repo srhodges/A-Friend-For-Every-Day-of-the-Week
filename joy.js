@@ -1,38 +1,78 @@
 const bibleUrl = "https://bible-api.com";
 const weekdayBox = document.querySelector(".weekday-container.weekday");
 
-// let verseDiv = document.querySelectorAll("section");
-// console.log(verseDiv);
 
-// weekdayBox.createTextNode(displayHope());
+const messageInput = document.querySelector(".message")
+
+const saveMessage = () => {
+  window.localStorage.setItem("message", messageInput.value)
+}
+
+const loadMessage = () => {
+let content = window.localStorage.getItem(messageInput)
+  message.append(content);
+}
+
+saveButton = document.querySelector(".save");
+saveButton.addEventListener("click", () => {
+  saveMessage();
+});
+
+loadButton = document.querySelector(".load");
+loadButton.addEventListener("click", () => {
+  loadMessage();
+});
+
+
 
 async function accessBible(str, day) {
   try {
+    console.log(str);
     let res = await axios.get(`${bibleUrl}/${str}`);
     console.log(res);
     let verses = res.data.verses;
-    renderVerse(verses, day);
-    console.log(verses);
-  } catch (error) {
-    console.log(error);
-  }
-};
+    if (day === "alert") {
+      displayAlert(verses);
+    } else {
+      renderVerse(verses, day);
+    }   console.log(verses);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+function displayAlert(verses) {
+  let str = "";
+  verses.forEach((verse) => {
+    str += `${verse.book_name} ${verse.chapter}:${verse.verse} ${verse.text}`
+   
+  })
+  alert(str);
+}
 
 
-// let button = document.querySelector("button");
-// button.onclick(accessBible("input", "search-return"));
-// accessBible("input", "search-return");
-// this code is breaking everything 
+let input = document.querySelector("#search-input");
+
+let button = document.querySelector("button");
+button.addEventListener("click", () => {
+
+  accessBible(input.value, "alert");
+});
+
+
+
 
 function renderVerse(verses, day) {
-  let verseDiv = document.querySelector(`#${day}`)
-  verses.forEach((verse) => {
-    let verseTextDiv = document.createElement("div")
-    verseDiv.appendChild(verseTextDiv);
-    console.log(verse);
-    verseData(verseTextDiv, verse.book_name, verse.chapter, verse.verse, verse.text)
-  })
-}
+  
+    let verseDiv = document.querySelector(`#${day}`)
+    verses.forEach((verse) => {
+      let verseTextDiv = document.createElement("div")
+      verseDiv.appendChild(verseTextDiv);
+      console.log(verse);
+      verseData(verseTextDiv, verse.book_name, verse.chapter, verse.verse, verse.text)
+    })
+  }
+
 
 function verseData(verseTextDiv, book_name, chapter, verse, text) {
   console.log(book_name, chapter, verse, text);
@@ -40,7 +80,7 @@ function verseData(verseTextDiv, book_name, chapter, verse, text) {
   h3.innerText = book_name;
     verseTextDiv.append(h3);
   const h2 = document.createElement("h2");
-  h2.innerText = chapter, verse;
+  h2.innerText = `${chapter}:${verse}`
   verseTextDiv.append(h2);
   const p = document.createElement("p");
   p.innerText = text;
@@ -55,25 +95,25 @@ days.forEach(day => {
     day.innerHTML = "";
     switch (e.target.id) {
       case "sunday":
-        accessBible("1Corinthians 13", "sunday");
+        accessBible("John 15:12", "sunday");
         break;
       case "monday":
-        accessBible("1John 5:14-15", "monday");
+        accessBible("James 5:16", "monday");
         break;
         case "tuesday":
-          accessBible("Ephesians 4:31-32", "tuesday");
+          accessBible("Ephesians 4:31", "tuesday");
         break;
         case "wednesday":
           accessBible("Psalm 34:17", "wednesday");
         break;
         case "thursday":
-          accessBible("James 1:2-4", "thursday");
+          accessBible("Psalm 27:14", "thursday");
         break;
         case "friday":
           accessBible("Romans 15:13", "friday");
           break;
           case "saturday":
-        accessBible("2Corinthians 13:11", "saturday");
+        accessBible("John 16:33", "saturday");
         break;
     
     }

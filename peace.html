@@ -8,15 +8,20 @@
   <title>A Friend For Every Day of the Week </title>
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <script defer src="joy.js"></script>
-
+  <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+  <script src="https://kit.fontawesome.com/b06220de80.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
   <h1><div class="title"></div> A Friend For Every Day of the Week</h1>
 
-  <div id = "search-return">
-    <input type="text" placeholder="Search the Word"><br><button>Submit</button>
+  <div class = "search-return">
+    <input id="search-input" style="width: 200px; height: 40px; font-size: 14;"" type="text" placeholder="Search the Word"><br>
+    
+    <button>
+    <i class="fas fa-bible fa-2x"></i>
+    </button>
 
   </div>
 
@@ -34,7 +39,7 @@
     <li><div class="weekday" id="wednesday">A Friend to Cry with on Wednesday</div>
       <section></section>
     </li>
-    <li><div class="weekday" id="thursday">A Friend Who Brings Insight on Thursday</div>
+    <li><div class="weekday" id="thursday">A Friend Who Gives Courage on Thursday</div>
       <section></section>
     </li>
     <li><div class="weekday" id="friday">A Friend Who Brings Joy on Friday</div>
@@ -47,10 +52,13 @@
 
   </div>
 
-  <div id="notes">
-    <input type="text"placeholder="Encourage Yourself"><br>
-    <button>Save</button><button>Load</button>
+  <div class="notes">
+    
+    <input style="width: 400px; height: 200px; font-size: 14pt" class = "message" type="text" placeholder="Encourage Yourself..."></input><br>
+    <button class="save">Save</button><button class="load">Load</button>
   </div>
+    
+    
 
 </body>
 </html>
