@@ -64,19 +64,19 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 | Day           | Deliverable                                        | Status     |
 | ------------- | -------------------------------------------------- | ---------- |
-| August 27 -29 | Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete |
-| August 30     | Project Approval                                   | Incomplete |
-| August 31     | Core Application Structure (HTML, CSS, etc.)       | Incomplete |
-| Sept 1        | Pseudocode / actual code                           | Incomplete |
-| Sept 2        | Initial Clickable Model                            | Incomplete |
-| Sept 3        | MVP                                                | Incomplete |
-| Sept 6        | Presentations                                      | Incomplete |
+| August 27 -29 | Prompt / Wireframes / Priority Matrix / Timeframes | Complete |
+| August 30     | Project Approval                                   | Complete |
+| August 31     | Core Application Structure (HTML, CSS, etc.)       | Complete |
+| Sept 1        | Pseudocode / actual code                           | Complete |
+| Sept 2        | Initial Clickable Model                            | Complete |
+| Sept 3        | MVP                                                | Complete |
+| Sept 6        | Presentations                                      | Complete |
 
 ## Priority Matrix
 
 Include a full list of features that have been prioritized based on the `Time and Importance` Matrix. Link this image in a similar manner to your wireframes
 
-- Seperate div panels that display days of the week
+*Trying to upload matrix image*
 
 ## Timeframes
 
@@ -86,30 +86,37 @@ Time frames are also key in the development cycle. You have limited time to code
 
 | Component           | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Formatting HTML     |    H     |     6 hrs      |     0 hrs     |    0 hrs    |
-| Styling with CSS    |    H     |     6 hrs      |     0 hrs     |    0 hrs    |
-| Working with API    |    H     |     6 hrs      |     0 hrs     |    0 hrs    |
-| Functionality in JS |    H     |     6 hrs      |     0 hrs     |    0 hrs    |
-| Total               |    H     |     24 hrs     |     0 hrs     |    0 hrs    |
+| Formatting HTML     |    H     |     6 hrs      |     3 hrs     |    3 hrs    |
+| Styling with CSS    |    H     |     6 hrs      |     6 hrs     |    6 hrs    |
+| Working with API    |    H     |     6 hrs      |     4 hrs     |    4 hrs    |
+| Functionality in JS |    H     |     6 hrs      |     5 hrs     |    5 hrs    |
+| Total               |    H     |     24 hrs     |     0 hrs     |    18 hrs    |
 
 ## Code Snippet
 
 ```
-<strong> This code snippet will display the alt text for the weekday image/object after it's been clicked.</strong>
+const messageInput = document.querySelector(".message")
 
-onclick = displayHope();
-
-function displayHope() {
-
-let weekdays = document.body.getElementById('weekdays');
-let weekday = weekdays[i];
-
-if (weekday.alt) {
-let text = document.createTextNode(weekday.alt);
-weekday.parentNode.replaceChild(text, weekday);
+const saveMessage = () => {
+  window.localStorage.setItem("message", messageInput.value)
+  messageInput.value = "";
 }
+
+const loadMessage = () => {
+  const message = window.localStorage.getItem('message')
+  console.log(message);
+  messageInput.value = message
 }
-}
+
+saveButton = document.querySelector(".save");
+saveButton.addEventListener("click", () => {
+  saveMessage();
+});
+
+loadButton = document.querySelector(".load");
+loadButton.addEventListener("click", () => {
+  loadMessage();
+});
 
 ```
 
