@@ -1,14 +1,20 @@
-# A-Friend-For-Every-Day-of-the-Week
+# A Friend For Every Day of the Week
 
-# Project Overview
+## Overview
 
-## Project Name
+This application will first display the days of the week, then on click will display an affirmation or word of encouragement from the Christian Bible.
 
-A Friend for Every Day of the Week
+<br>
 
-## Project Description
+## MVP
 
-This application will first display the days of the week then display an affirmation or word of encouragement from the Bible when clicked.
+> The Minimum Viable Product should be a well-planned, easily-communicated product, ensuring that the client's deliverable will be achievable and meet specifications within the time frame estimated.
+
+- Successfully use external api
+- Render data on page
+- Allow user to record thoughts in local storage
+
+<br>
 
 ## API and Data Sample
 
@@ -37,30 +43,11 @@ bible-api.com/
 
 https://wireframe.cc/pro/pp/543d4ba6e467781
 
-### MVP/PostMVP
-
-The functionality will then be divided into two separate lists: MPV and PostMVP. Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.
-
-#### MVP
-
-_These are examples only. Replace with your own MVP features._
-
-- Successfully use external api
-- Render data on page
-- Allow user to choose day
--
-
-#### PostMVP
-
-- Make weekday tiles float on page
-- Use local storage to save user notes for individual weekdays
-- Give translation options
 
 ## Project Schedule
 
-This schedule will be used to keep track of your progress throughout the week and align with our expectations.
+This schedule will be used to keep track of progress throughout the week and align expectations.
 
-You are **responsible** for scheduling time with your squad to seek approval for each deliverable by the end of the corresponding day, excluding `Saturday` and `Sunday`.
 
 | Day           | Deliverable                                        | Status     |
 | ------------- | -------------------------------------------------- | ---------- |
@@ -90,7 +77,7 @@ Time frames are also key in the development cycle. You have limited time to code
 | Styling with CSS    |    H     |     6 hrs      |     6 hrs     |    6 hrs    |
 | Working with API    |    H     |     6 hrs      |     4 hrs     |    4 hrs    |
 | Functionality in JS |    H     |     6 hrs      |     5 hrs     |    5 hrs    |
-| Total               |    H     |     24 hrs     |     0 hrs     |    18 hrs    |
+| Total               |    H     |     24 hrs     |     18 hrs    |    18 hrs    |
 
 ## Code Snippet
 
@@ -120,6 +107,3 @@ loadButton.addEventListener("click", () => {
 
 ```
 
-## Change Log
-
-Use this section to document what changes were made and the reasoning behind those changes.
