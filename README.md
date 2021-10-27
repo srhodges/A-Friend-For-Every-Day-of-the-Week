@@ -42,6 +42,7 @@ bible-api.com/
 }
 
 ```
+<br>
 
 ## Wireframes
 
@@ -63,6 +64,7 @@ https://wireframe.cc/pro/pp/543d4ba6e467781
 | Sept 3        | MVP                                                | Complete |
 | Sept 6        | Presentations                                      | Complete |
 
+<br>
 
 ## Timeframes
 
@@ -75,7 +77,9 @@ https://wireframe.cc/pro/pp/543d4ba6e467781
 | Styling with CSS    |    H     |     6 hrs      |     6 hrs     |    6 hrs    |
 | Working with API    |    H     |     6 hrs      |     4 hrs     |    4 hrs    |
 | Functionality in JS |    H     |     6 hrs      |     5 hrs     |    5 hrs    |
-| Total               |    H     |     24 hrs     |     18 hrs    |    18 hrs    |
+| Total               |    H     |     24 hrs     |     18 hrs    |    18 hrs   |
+
+<br>
 
 ## Code Snippet
 
