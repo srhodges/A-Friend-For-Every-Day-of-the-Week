@@ -4,6 +4,9 @@
 
 This application will first display the days of the week, then on click will display an affirmation or word of encouragement from the Christian Bible.
 
+https://srhodges.github.io/A-Friend-For-Every-Day-of-the-Week/
+
+
 <br>
 
 ## MVP
