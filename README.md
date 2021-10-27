@@ -15,6 +15,7 @@ https://srhodges.github.io/A-Friend-For-Every-Day-of-the-Week/
 
 - Successfully use external api
 - Render data on page
+- Ability to search for specific verses
 - Allow user to record thoughts in local storage
 
 <br>
